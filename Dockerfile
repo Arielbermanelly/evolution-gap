@@ -1,9 +1,2 @@
-FROM node:20-slim
-
-# Instalação básica para rodar a Evolution API
-RUN apt-get update && apt-get install -y git python3 make g++ && \
-    npm install -g evolution-api@latest
-
+FROM evolutionapi/evolution-api:v2.1.2
 EXPOSE 8080
-
-CMD ["evolution-api", "start"]
