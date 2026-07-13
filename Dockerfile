@@ -1,4 +1,4 @@
-FROM ghcr.io/evolution-api/evolution-api:latest
+FROM atendai/evolution-api:latest
 
 EXPOSE 8080
 
